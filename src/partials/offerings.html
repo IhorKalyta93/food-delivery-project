@@ -1,0 +1,87 @@
+<section class="offerings offerings__section" id="offerings">
+    <div class="container offerings__container">
+        <div class="offerings__img-box">
+            <div class="offerings__img">
+                <img srcset="
+          ./images/offerings/apple-320@1x-min.png   280w,
+          ./images/offerings/apple-320@2x-min.png   560w,
+          ./images/offerings/apple-768@1x-min.png   357w,
+          ./images/offerings/apple-768@2x-min.png   714w,
+          ./images/offerings/apple-1280@1x-min.png  550w,
+          ./images/offerings/apple-1280@2x-min.png 1100w
+        " sizes="(min-width: 1280px) 550px, (min-width: 768px) 357px, (min-width: 320px) 280px, 100vw"
+                    src="./images/offerings/apple-1280@1x-min.png" alt="green apple" />
+            </div>
+            <div class="offerings__img--transparent">
+                <ul class="img__tablet">
+                    <li>
+                        <img srcset="
+              ./images/offerings/apple-768-2@1x-min.png 166w,
+              ./images/offerings/apple-768-2@2x-min.png 332w
+            " sizes="166px" src="./images/offerings/apple-768-2@1x-min.png" alt="green apple" />
+                    </li>
+                    <li>
+                        <img srcset="
+              ./images/offerings/apple-768-3@1x-min.png 108w,
+              ./images/offerings/apple-768-3@2x-min.png 216w
+            " sizes="108px" src="./images/offerings/apple-768-3@1x-min.png" alt="green apple" />
+                    </li>
+                </ul>
+                <div class="circle"></div>
+            </div>
+        </div>
+
+        <div class="offerings__box">
+            <div class="offerings__content-title">
+                <h2 class="offerings__title">What’s Special About Our Offerings</h2>
+                <p class="offerings__descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                    varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+                    ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+                </p>
+            </div>
+            <ul class="offerings__list">
+                <li class="offerings__item">
+                    <div class="offerings__icon">
+                        <svg class="icon icon__offerings" width="32" height="32">
+                            <use href="./images/offerings/icons.svg#icon-touch_app"></use>
+                        </svg>
+                    </div>
+                    <h3 class="offerings__sudtitle">Fasest Delivery</h3>
+                    <p class="offerings__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        varius enim in eros.
+                    </p>
+                </li>
+                <li class="offerings__item">
+                    <div class="offerings__icon">
+                        <svg width="32" height="32">
+                            <use class="icon icon__offerings" href="./images/offerings/icons.svg#icon-rocket_launch">
+                            </use>
+                        </svg>
+                    </div>
+                    <h3 class="offerings__sudtitle">Easy to order</h3>
+                    <p class="offerings__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        varius enim in eros.
+                    </p>
+                </li>
+            </ul>
+            <ul class="offerings__list-btn">
+                <li>
+                    <button type="button" class="button offerings__btn--light js-open-modal" data-modal="3">
+                        Order Now
+                    </button>
+                </li>
+                <li>
+                    <button class="button offerings__btn--trasparent" type="button">
+                        Read More
+                        <svg width="14" height="14">
+                            <use href="./images/offerings/icons.svg#icon-chevron-down"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

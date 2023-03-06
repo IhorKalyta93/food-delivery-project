@@ -1,0 +1,237 @@
+.offerings__section {
+  padding: 41px 0 60px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/offerings/bgimg-320-1@1x-min.jpg);
+
+  @include retina-bgi {
+    background-image: url(../images/offerings/bgimg-320-1@2x-min.jpg);
+  }
+
+  @include mobile {
+    background-image: url(../images/offerings/bgimg-480-1@1x-min.jpg);
+
+    @include retina-bgi {
+      background-image: url(../images/offerings/bgimg-480-1@2x-min.jpg);
+    }
+  }
+
+  @include tablet {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background-image: none;
+  }
+
+  @include desktop {
+    background-image: none;
+    padding-top: 177px;
+    padding-bottom: 43px;
+  }
+}
+
+.offerings__container {
+  height: 100%;
+  @include desktop {
+    display: flex;
+    gap: 90px;
+  }
+}
+
+.offerings__img-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+  @include tablet {
+    justify-content: space-between;
+  }
+  @include desktop {
+    margin-bottom: 0;
+  }
+}
+.offerings__box {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  @include tablet {
+    gap: 40px;
+  }
+  @include desktop {
+    justify-content: center;
+    gap: 0;
+  }
+}
+.offerings__img--transparent {
+  display: none;
+  @include tablet {
+    display: flex;
+    align-items: center;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+.img__tablet {
+  display: flex;
+  align-items: baseline;
+  gap: 44px;
+}
+.offerings__content-title {
+  display: flex;
+  flex-direction: column;
+  @include desktop {
+    margin-bottom: 40px;
+  }
+}
+
+.offerings__title {
+  font-size: 28px;
+  line-height: calc(33 / 28);
+  max-width: 480px;
+  margin-bottom: 28px;
+  @include tablet {
+    font-size: 42px;
+    line-height: calc(49 / 42);
+    max-width: 526px;
+    margin-bottom: 20px;
+  }
+  @include desktop {
+    max-width: 527px;
+  }
+}
+
+.offerings__descr {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  max-width: 480px;
+  @include tablet {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    max-width: 500px;
+  }
+}
+
+.offerings__list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+
+  @include tablet {
+    flex-direction: row;
+    gap: 116px;
+  }
+  @include desktop {
+    gap: 67px;
+    margin-bottom: 32px;
+  }
+}
+
+.offerings__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  width: 48px;
+  height: 48px;
+  background-color: var(--color-white);
+  border-radius: 50px;
+
+  -webkit-animation: pulsing 2s infinite;
+  animation: pulsing 2s infinite;
+
+  @-webkit-keyframes pulsing {
+    0% {
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5);
+    }
+
+    50% {
+      -webkit-transform: scale(1, 1);
+      transform: scale(1, 1);
+    }
+
+    100% {
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5);
+    }
+  }
+
+  @keyframes pulsing {
+    0% {
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5);
+    }
+
+    50% {
+      -webkit-transform: scale(1, 1);
+      transform: scale(1, 1);
+    }
+
+    100% {
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5);
+    }
+  }
+}
+.icon__offerings {
+  color: var(--color-dark-green);
+}
+.offerings__sudtitle {
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  margin-bottom: 16px;
+}
+.offerings__description {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  max-width: 480px;
+  @include tablet {
+    max-width: 252px;
+  }
+  @include desktop {
+    max-width: 253px;
+  }
+}
+.offerings__list-btn {
+  display: flex;
+  gap: 24px;
+}
+.offerings__btn--light {
+  font-size: 13px;
+  line-height: 150%;
+  color: var(--color-black);
+  width: 106px;
+  height: 40px;
+  padding: 10px 0;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-dark-green);
+  transition: all var(--transition);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--brand-color-green);
+    border: transparent;
+  }
+}
+
+.offerings__btn--trasparent {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--color-black);
+  width: 106px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  transition: border var(--transition);
+  &:hover,
+  &:focus {
+    border: 2px solid var(--color-dark-green);
+  }
+  @include desktop {
+    display: none;
+  }
+}
